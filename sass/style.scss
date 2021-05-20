@@ -1,0 +1,128 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family:
+    font-color: black;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 20px;
+    margin : 0 auto;
+}
+
+/*Navigation*/
+
+#logo{
+    color: yellow;
+    font-family: 'Pattaya', sans-serif;
+
+}
+p.tittle{
+    color: white;
+    width:100%;
+    height: 150px;
+    
+}
+.topnav {
+    background-color: #666666;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:black;
+  text-align: center;
+  padding: 5px ;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+
+
+}
+/* bg */
+
+#bg {
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+  }
+.background{
+    min-width: 100%;
+    min-height: 100%;
+    position:relative;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fluid{  
+    position: absolute;   
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+box .container{
+    display: flexbox;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+h1{
+      color: black;
+  }
+p{
+      color: grey;
+  }
+i{
+    color: orange;
+}
+
+.footer{
+    width:100%;
+    margin: 0 35px 0 0;
+    text-align: center;
+}
+.icons{
+    display: inline-block;
+    list-style-type: none;
+}
+.icons li{
+    margin: 60px 0 60px 0;
+    font-size: 0px;
+    display: inline-block;
+}
+
+.footer i{
+    font-size: 30px;
+    color: black;
+    
+} 
+.portfolio{
+    display: flexbox;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 15px 30px 0 30px;
+    margin: 10px;
+}
+
+
+
+
+
+
