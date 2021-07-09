@@ -1,130 +1,164 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-body{
-    margin: 0px;
-    font-size: 16px;
-    line-height: 1.7;
-    font-family:
-    font-color: black;
+
+body {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
-    max-width: 1140px;
-    padding: 20px;
-    margin : 0 auto;
+  max-width: 1140px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 /*Navigation*/
-
-#logo{
-    color: yellow;
-    font-family: 'Pattaya', sans-serif;
-
+.logo {
+  color: yellow;
+  font-family: 'Pattaya', sans-serif;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
-p.tittle{
-    color: white;
-    width:100%;
-    height: 150px;
-    
+
+.link {
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
-.topnav {
-    background-color: #666666;
-    overflow: hidden;
+
+p.tittle {
+  color: white;
+  width: 100%;
+  height: 150px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  padding: 10px, 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #fff;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color:black;
-  text-align: center;
-  padding: 5px ;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
-
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
-
-
 }
+
 /* bg */
-
 #bg {
-    position: relative; 
-    top: 0; 
-    left: 0; 
-    min-width: 100%;
-    min-height: 100%;
-  }
-.background{
-    min-width: 100%;
-    min-height: 100%;
-    position:relative;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.container-fluid{  
-    position: absolute;   
-    font-size: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   
-  }
-box .container{
-    display: flexbox;
-    position: relative;
-    text-align: center;
-    color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-h1{
-      color: black;
-  }
-p{
-      color: grey;
-  }
-i{
-    color: orange;
-}
-.services{
-    font-size: 55px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.footer{
-    width:100%;
-    margin: 0 35px 0 0;
-    text-align: center;
-}
-.icons{
-    display: inline-block;
-    list-style-type: none;
-}
-.icons li{
-    margin: 60px 0 60px 0;
-    font-size: 0px;
-    display: inline-block;
+.background {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.footer i{
-    font-size: 30px;
-    color: black;
-    
-} 
-.portfolio{
-    display: flexbox;
-    position: relative;
-    text-align: center;
-    color: white;
-    padding: 15px 30px 0 30px;
-    margin: 10px;
+.container-fluid {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+box .container {
+  display: flexbox;
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+.title {
+  margin: 0, 10px, 0, 10px;
+}
 
+button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: grey;
+}
+
+i {
+  color: orange;
+}
+
+.services {
+  display: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  margin: 0 35px 0 0;
+  text-align: center;
+}
+
+.icons {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.icons li {
+  margin: 60px 0 60px 0;
+  font-size: 0px;
+  display: inline-block;
+}
+
+.footer i {
+  font-size: 30px;
+  color: black;
+}
+
+.portfolio {
+  display: flexbox;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 15px 30px 0 30px;
+  margin: 10px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0VBR0Usc0JBQXNCO0FDQ3hCOztBRENBO0VBQ0UsV0FBVztFQUNYLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsNkVBQTZFO0FDRS9FOztBRENBO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixjQUFjO0FDRWhCOztBRENBLGFBQUE7QUFFQTtFQUNFLGFBQWE7RUFDYixrQ0FBa0M7RUFDbEMsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIscUJBQXFCO0FDQ3ZCOztBRENBO0VBQ0UsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLHFCQUFxQjtBQ0V2Qjs7QURBQTtFQUNFLFlBQVk7RUFDWixXQUFXO0VBQ1gsYUFBYTtBQ0dmOztBRERBO0VBQ0UsZUFBZTtFQUNmLE1BQU07RUFDTixPQUFPO0VBQ1AsV0FBVztFQUNYLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsc0JBQXNCO0VBQ3RCLDhCQUE4QjtFQUM5Qiw2QkFBNkI7QUNJL0I7O0FEREEsOENBQUE7QUFVQSxvREFBQTtBQUNBO0VBQ0UsWUFBWTtBQ0xkOztBRE9BLE9BQUE7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixNQUFNO0VBQ04sT0FBTztFQUNQLGVBQWU7RUFDZixnQkFBZ0I7QUNMbEI7O0FET0E7RUFDRSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1QixzQkFBc0I7QUNKeEI7O0FETUE7RUFDRSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBQ1QsZ0NBQWdDO0FDSGxDOztBREtBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsWUFBWTtBQ0ZkOztBRElBO0VBQ0Usd0JBQXdCO0FDRDFCOztBREdBO0VBQ0Usd0JBQXdCO0VBQ3hCLFlBQVk7RUFDWixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsZUFBZTtFQUNmLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIscUJBQXFCO0VBQ3JCLHFCQUFxQjtFQUNyQixlQUFlO0FDQWpCOztBREVBO0VBQ0UsWUFBWTtBQ0NkOztBRENBO0VBQ0UsV0FBVztBQ0ViOztBREFBO0VBQ0UsYUFBYTtBQ0dmOztBRERBO0VBQ0UsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsWUFBWTtBQ0lkOztBREZBO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixrQkFBa0I7QUNLcEI7O0FESEE7RUFDRSxxQkFBcUI7RUFDckIscUJBQXFCO0FDTXZCOztBREpBO0VBQ0UscUJBQXFCO0VBQ3JCLGNBQWM7RUFDZCxxQkFBcUI7QUNPdkI7O0FESkE7RUFDRSxlQUFlO0VBQ2YsWUFBWTtBQ09kOztBRExBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixZQUFZO0FDUWQiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

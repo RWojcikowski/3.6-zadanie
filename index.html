@@ -7,7 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="vendor\bootstrap-grid.css">
         <link rel="stylesheet" href="css\style.css">
         <link rel="stylesheet" href="sass\style.scss">
         </head>
@@ -16,35 +17,39 @@
             <div class="navigation"> 
                 <div class="container-fluid-one"> 
                     
-                    <div class="topnav">
-                        <a id="logo" href="#">Golden</a>
+                    <div class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+                        <a class="logo" href="#">Golden</a>
                         <div class="topnav-right">
-                            <a href="#">Home</a>
-                            <a href="#">Services</a>
-                            <a href="#">Portfolio</a>
-                            <a href="">About</a>
-                            <a href="">Contact</a>
+                            <a class="link" href="#">Home</a>
+                            <a class="link" href="#services">Services</a>
+                            <a class="link" href="#portfolio">Portfolio</a>
+                            <a class="link" href="">About</a>
+                            <a class="link" href="#contact">Contact</a>
                         </div>
                       </div>    
                     
                 <div class="background">
                     <img src="images\Background Image.png" id="bg" style="min-width:100% min-height:100% ;">    
                     <div class="container-fluid">
-                        <p class="tittle d-block">Welcome to Our studio<br>
-                        IT`S NICE TO MEET YOU<br><button type="button" class="btn btn-warning d-inline">Tell me more</button></p>
-                        
+                        <p class="tittle d-block">Welcome to Our studio</p>
+                            <p class="tittle d-block">IT`S NICE TO MEET YOU</p>
+                        <button class="btn">Tell me more</button>
                     </div>
+                        
+                        
+                   
              
                 </div>
             </div>     
             </header>
                 
             <!-- text icons -->
-                <box ser>
+                <box>
+                    <div class="services" href="#services"><h1>Services</h1></div>
                     
                     <div class="container">
                         <div class="row">
-                            <div class="services"><h1>Services</h1></div>
+                            
                             <div class="col-md-4">
                             
                                 <h1><i class="fas fa-shopping-basket"></i><br>E-commerce</h1>
@@ -79,12 +84,12 @@
 
 
                 <!-- Portfolio -->
-                <div class="container">
+                <div class="container" >
                     <div class="portfolio">
+                         <h1 href="#portfolio">Our Portfolio</h1>
+                            <p>consectetur adipiscing elit.</p>                           
                         <div class="row"> 
-                            <h1>Our Portfolio</h1>
-                            <p>consectetur adipiscing elit.</p>
-                    
+                   
                             <div class="row">
                                 <div class="col">
                                     <img src="images\Image.png">
@@ -124,11 +129,11 @@
 <!-- footer icons -->
     <div class="footer"> 
         <div class="icons">
-            <ul class="footer">
-                <li><a href="#"><i class="fab fa-twitter"></i>tweet</a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i>facebook<a></a></li>
-                <li><a href="#"><i class="fab fa-pinterest-p"></i>pinterest<a></a></li>
-                <li><a href="#"><i class="fab fa-google-plus-g"></i>google+<a></li>
+            <ul class="footer" >
+                <li><a href="#contact"><i class="fab fa-twitter"></i>tweet</a></li>
+                <li><a href="#contact"><i class="fab fa-facebook-f"></i>facebook<a></a></li>
+                <li><a href="#contact"><i class="fab fa-pinterest-p"></i>pinterest<a></a></li>
+                <li><a href="#contact"><i class="fab fa-google-plus-g"></i>google+<a></li>
             </ul>
         </div>
     </div>
