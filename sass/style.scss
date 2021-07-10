@@ -25,6 +25,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: none;
+  font-size: 20px;
 }
 .link {
   color: white;
@@ -32,6 +33,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: none;
+  font-size: 20px;
 }
 p.tittle {
   color: white;
@@ -43,11 +45,13 @@ p.tittle {
   top: 0;
   left: 0;
   width: 100%;
-  height: 30px;
+  height: 40px;
   padding: 10px, 20px;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.5);
+
+  background: rgba(0, 0, 0, 0.9);
   border-bottom: 1px solid #fff;
+  //background-color: transparent;
 }
 
 /* Style the links inside the navigation bar */
@@ -61,7 +65,8 @@ p.tittle {
 // }
 
 /* Right-aligned section inside the top navigation */
-.topnav-right {
+.right {
+  position: relative;
   float: right;
 }
 /* bg */
