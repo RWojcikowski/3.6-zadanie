@@ -1,164 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <title>Golden</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="vendor\bootstrap-grid.css">
-        <link rel="stylesheet" href="css\style.css">
-        <link rel="stylesheet" href="sass\style.scss">
-        </head>
-        <body>
-            <header>
-                
-            <div class="navigation"> 
-                <div class="container-fluid-one"> 
-                    
-                    <div class="navbar">
-                        <a class="logo" href="#">Golden</a>
-                        <div class="right">
-                            <a class="link" href="#">Home</a>
-                            <a class="link" href="#services">Services</a>
-                            <a class="link" href="#portfolio">Portfolio</a>
-                            <a class="link" href="">About</a>
-                            <a class="link" href="#contact">Contact</a>
-                        </div>
-                      </div>    
-                    
-                <div class="background">
-                    <img src="images\Background Image.png" id="bg" style="min-width:100% min-height:100% ;">    
-                    <div class="container-fluid">
-                        <p class="tittle d-block">Welcome to Our studio</p>
-                            <p class="tittle d-block">IT`S NICE TO MEET YOU</p>
-                        <button class="btn">Tell me more</button>
-                    </div>
-                        
-                        
-                   
-             
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Great+Vibes&family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="vendor/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       
+        <img src="images\Background.png" id="bg" style="min-width:100% min-height:100% "> 
+       
+       <header class="hero">
+            <div class="navbar">
+                <div class="container">
+                    <h2 class="brand-name">Golden</h2>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" hidden>
+                    <label class="menu-icon" for="menu-btn"><i class="fa fa-bars navicon"></i></label>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-            </div>     
-            </header>
+            </div>
+            <div class="hero-inner">
                 
-            <!-- text icons -->
-                <box>
-                    <div class="services" href="#services"><h1>Services</h1></div>
-                    
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-md-4">
-                            
-                                <h1><i class="fas fa-shopping-basket"></i><br>E-commerce</h1>
-                                <p>Lorem ipsum dolor sit amet,<br> 
-                                    consectetur adipiscing elit.<br>  
-                                    Donec semper rhoncus tellus eu euismod.<br> 
-                                    Nulla maximus egestas consequat.<br> 
-                                    Integer semper risus<br>  
-                                    a felis maximus viverra</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h1><i class="far fa-window-restore"></i><br>Respondive web</h1>
-                                <p>Lorem ipsum dolor sit amet,<br> 
-                                    consectetur adipiscing elit. <br> 
-                                    Donec semper rhoncus tellus eu euismod.<br> 
-                                    Nulla maximus egestas consequat.<br> 
-                                    Integer semper risus <br> 
-                                    a felis maximus viverra</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h1><i class="fas fa-unlock-alt"></i><br>Web security</h1>
-                                <p>Lorem ipsum dolor sit amet, <br> 
-                                    consectetur adipiscing elit. <br> 
-                                    Donec semper rhoncus tellus eu euismod.<br> 
-                                    Nulla maximus egestas consequat.<br> 
-                                    Integer semper risus <br> 
-                                    a felis maximus viverra</p>
-                            </div>
+                <h3 class="page-subtitle">Welcome to our studio!</h3>
+                <h1 class="page-title">It's nice to meet you</h1>
+                <a href="#" class="btn">Tell me more</a>
+            </div>
+        </header>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Services</h2>
+                    <h3 class="section-subtitle">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-content">
+                            <i class="fa fa-shopping-basket"></i>
+                            <h3 class="content-title">E-commerce</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas expedita quis dolorem alias a minus quasi fugit perferendis ea.</p>
                         </div>
                     </div>
-                </box>
-
-
-                <!-- Portfolio -->
-                <div class="container" >
-                    <div class="portfolio">
-                         <h1 href="#portfolio">Our Portfolio</h1>
-                            <p>consectetur adipiscing elit.</p>                           
-                        <div class="row"> 
-                   
-                            <div class="row">
-                                <div class="col">
-                                    <img src="images\Image.png">
-                                    <h1>logo</h1>
-                                    <p>Esistono innumerevoli variazioni dei passaggi</p>
-                                </div>
-                                <div class="col">
-                                    <img src="images\Image2.png">
-                                    <h1>website</h1>
-                                    <p>Esistono innumerevoli variazioni dei passaggi</p>
-                                </div>
-                                <div class="col">
-                                    <img src="images\Image3.png">
-                                    <h1>arts</h1>
-                                    <p>Esistono innumerevoli variazioni dei passaggi</p>
-                                </div>
-                                
-                                <div class="col">
-                                    <img src="images\Image4.png">
-                                    <h1>vinyl cover</h1>
-                                    <p>Esistono innumerevoli variazioni dei passaggi</p>
-                                </div>
-                                <div class="col">
-                                    <img src="images\Image5.png">
-                                    <h1>web</h1>
-                                    <p>Esistono innumerevoli variazioni dei passaggi</p>
-                                </div>
-                                <div class="col">
-                                    <img src="images\Image6.png">
-                                    <h1> logos</h1>
-                                    <p>Esistono innumerevoli variazioni dei passaggi</p>
-                                </div>
-                            </div>        
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-content">
+                            <i class="fa fa-laptop"></i>
+                            <h3 class="content-title">Responsive web</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas expedita quis dolorem alias a minus quasi fugit perferendis ea.</p>
                         </div>
                     </div>
-                </div>   
-<!-- footer icons -->
-    <div class="footer"> 
-        <div class="icons">
-            <ul class="footer" >
-                <li><a href="#contact"><i class="fab fa-twitter"></i>tweet</a></li>
-                <li><a href="#contact"><i class="fab fa-facebook-f"></i>facebook<a></a></li>
-                <li><a href="#contact"><i class="fab fa-pinterest-p"></i>pinterest<a></a></li>
-                <li><a href="#contact"><i class="fab fa-google-plus-g"></i>google+<a></li>
-            </ul>
-        </div>
-    </div>
-
-
-
-        
-  
-        
- 
-     
-        
-  
-        
-        
-        
-        
-        
-        
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous">
-    </script> 
-        </body>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-content">
+                            <i class="fa fa-lock"></i>
+                            <h3 class="content-title">Web security</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas expedita quis dolorem alias a minus quasi fugit perferendis ea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our portfolio</h2>
+                    <h3 class="section-subtitle">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="portfolio-img">
+                            <img src="images\Image.png" alt="image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3 class="content-title">Ebony &amp; Ivory</h3>
+                            <h4>Branding</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-img">
+                            <img src="images\Image2.png" alt="image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3 class="content-title">Smart stationary</h3>
+                            <h4>Print design</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-img">
+                            <img src="images\Image3.png" alt="image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3 class="content-title">Clever poster</h3>
+                            <h4>Print design</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-img">
+                            <img src="images\Image4.png" alt="image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3 class="content-title">Vinyl record</h3>
+                            <h4>Product mock-up</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-img">
+                            <img src="images\Image5.png" alt="image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3 class="content-title">Treehouse template</h3>
+                            <h4>Web design</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-img">
+                            <img src="images\Image6.png" alt="image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3 class="content-title">Burned logo</h3>
+                            <h4>Branding</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <p>&copy; Copyright 2014 FreebiesXpress.com</p>
+                    </div>
+                    <div class="social-media col-sm-6 col-lg-4">
+                        <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i>Pinterest</a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i>Google-plus</a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4"></div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
