@@ -1,18 +1,4 @@
-// * {
-//     border: 1px solid red;
-// }
-
 /* Global */
-$font-main: 'Montserrat', sans-serif;
-$font-text: 'Roboto Slab', serif;
-$font-decor: 'Gentium Book Basic', serif;
-$font-brand-name: 'Great Vibes', cursive;
-$color-main: #fed136;
-$color-light: #fff;
-$color-dark: #222;
-$color-text: #777;
-$color-bg: #f7f7f7;
-
 *,
 *::before,
 *::after {
@@ -27,7 +13,8 @@ body {
   margin: 0;
   line-height: 1.7;
   font-size: 16px;
-  font-family: $font-main;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #222;
 }
 
 section {
@@ -46,15 +33,15 @@ section {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $color-dark;
+  color: #222;
   margin: 0;
 }
 
 .section-subtitle {
-  font-family: $font-decor;
+  font-family: 'Gentium Book Basic', serif;
   font-size: 16px;
   font-style: italic;
-  color: $color-text;
+  color: #777;
   margin: 0;
 }
 
@@ -62,6 +49,7 @@ section {
   font-size: 18px;
   margin: 0;
   text-transform: capitalize;
+  color: #f7f7f7;
 }
 
 /* Navbar - inside .hero */
@@ -69,18 +57,19 @@ section {
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: $color-dark;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
+  background-color: #222;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .brand-name {
-  font-family: $font-brand-name;
-  color: $color-main;
+  font-family: 'Great Vibes', cursive;
+  color: #fed136;
   font-size: 28px;
 }
 
@@ -94,32 +83,34 @@ section {
   display: flex;
   flex-direction: column;
   list-style: none;
-  background: $color-dark;
+  background: #222;
   visibility: hidden;
   max-height: 0;
   overflow: hidden;
   transition: all 0.2s ease;
-  li {
-    padding: 5px 30px;
-    font-size: 14px;
-    text-transform: uppercase;
-    a {
-      text-decoration: none;
-      color: $color-light;
-      font-weight: 600;
-    }
-  }
+}
+
+.menu li {
+  padding: 5px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
 }
 
 .menu a:hover,
 a:focus {
-  color: $color-main;
+  color: #fed136;
 }
 
 .menu-icon {
   font-size: 24px;
-  color: $color-main;
-  background: $color-light;
+  color: #fed136;
+  background: #fff;
   border-radius: 2px;
   cursor: pointer;
   padding: 0 10px;
@@ -138,52 +129,60 @@ a:focus {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url(images\Background.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: $color-light;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .hero-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .page-title {
-    font-size: 75px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  .page-subtitle {
-    font-family: $font-decor;
-    font-size: 40px;
-    font-style: italic;
-    text-transform: capitalize;
-    margin: 0;
-  }
+}
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.hero .hero-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .page-title {
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero .page-subtitle {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 40px;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: 0;
 }
 
 .btn {
   margin-top: 48px;
   padding: 15px 40px;
-  color: $color-light;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
-  background-color: $color-main;
+  background-color: #fed136;
   border-radius: 2px;
 }
 
 .btn:hover {
-  color: $color-main;
-  background: $color-light;
+  color: #fed136;
+  background: #fff;
 }
 
 /* Services */
@@ -193,47 +192,53 @@ a:focus {
   align-items: center;
   text-align: center;
   margin-bottom: 48px;
-  i {
-    font-size: 44px;
-    color: $color-main;
-    border: 3px solid $color-main;
-    border-radius: 50%;
-    line-height: 80px;
-    height: 80px;
-    width: 80px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  p {
-    font-size: 14px;
-  }
+}
+
+.service-content i {
+  font-size: 44px;
+  color: #fed136;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  line-height: 80px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-content p {
+  font-size: 14px;
+  color: #f7f7f7;
 }
 
 /* Portfolio */
 .portfolio {
-  background-color: $color-bg;
+  background-color: #f7f7f7;
   text-align: center;
-  h4 {
-    font-family: $font-decor;
-    font-style: italic;
-    font-size: 14px;
-    margin: 0;
-    text-transform: capitalize;
-    color: $color-text;
-  }
+}
+
+.portfolio h4 {
+  font-family: 'Gentium Book Basic', serif;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+  text-transform: capitalize;
+  color: #777;
 }
 
 .portfolio-img {
   height: 400px;
-  img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+}
+
+.portfolio-img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .portfolio-text {
-  background-color: $color-light;
+  background-color: #fff;
   padding: 20px;
   margin-bottom: 48px;
 }
@@ -242,43 +247,45 @@ a:focus {
 footer {
   margin: 0;
   padding: 24px 0;
-  .row {
-    align-items: center;
-  }
-  p {
-    font-size: 14px;
-  }
+}
+
+footer .row {
+  align-items: center;
+}
+
+footer p {
+  font-size: 14px;
 }
 
 .social-media {
   text-align: center;
-  a {
-    font-size: 0;
-  }
-  i {
-    margin: 0 5px;
-    color: $color-light;
-    background-color: $color-dark;
-    font-size: 20px;
-    border-radius: 50%;
-    line-height: 40px;
-    height: 40px;
-    width: 40px;
-  }
+}
+
+.social-media a {
+  font-size: 0;
+}
+
+.social-media i {
+  margin: 0 5px;
+  color: #fff;
+  background-color: #222;
+  font-size: 20px;
+  border-radius: 50%;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 /* Media */
 @media (min-width: 320px) and (max-width: 768px) {
-  .hero {
-    .page-title {
-      font-size: 48px;
-    }
-    .page-subtitle {
-      font-size: 28px;
-    }
-    .btn {
-      transform: scale(0.8);
-    }
+  .hero .page-title {
+    font-size: 48px;
+  }
+  .hero .page-subtitle {
+    font-size: 28px;
+  }
+  .hero .btn {
+    transform: scale(0.8);
   }
   footer {
     text-align: center;
